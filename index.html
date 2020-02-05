@@ -10,193 +10,215 @@
 </head>
 
 <body>
-    <nav id="navbar">
-        <header>Programing Language: Java</header>
-        <ul>
-            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-            <li><a href="#Installing_JDK_and_a_Java_IDE" class="nav-link">Installing JDK and a Java IDE</a></li>
-            <li><a href="#Syntax" class="nav-link">Syntax</a></li>
-            <li><a href="#Comments" class="nav-link">Comments</a></li>
-            <li><a href="#Variables" class="nav-link">Variables</a></li>
-            <li><a href="#Operators" class="nav-link">Operators</a></li>
-            <li><a href="#Arrays" class="nav-link">Arrays</a></li>
-            <li><a href="#Loops" class="nav-link">Loops</a></li>
-            <li><a href="#Methods" class="nav-link">Methods</a></li>
-            <li><a href="#Reference" class="nav-link">Reference</a></li>
-        </ul>
-    </nav>
-    <main id="main-doc">
-        <section id="Introduction" class="main-section">
-            <header>Introduction</header>
-            <p>
-                Java is an object-oriented programming language developed by James
-                Gosling and colleagues at Sun Microsystems in the early 1990s.
-                Unlike conventional languages which are generally designed either
-                to be compiled to native (machine) code, or to be interpreted
-                from source code at runtime, Java is intended to be compiled
-                to a bytecode, which is then run (generally using JIT compilation)
-                by a Java Virtual Machine.
-            </p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-        </section>
-        <section id="Installing_JDK_and_a_Java_IDE" class="main-section">
-            <header>Installing JDK and a Java IDE</header>
-            <p>
-                In order to develop Java applications or Java APIs you need the Java
-                Software Developer Kit (Java SDK) installed. You can find the differents Java SDKs here:
-            </p>
-            <p>
-                <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" alt="" target="_blank">
-                    Java Software Developer Kit (Java SDK)
-                </a>
-            </p>
-
-            <p>
-                If you plan to be working more seriously with Java, I would recommend
-                that you install a Java IDE (Integrated Development Environment). An
-                IDE contains both a code editor with syntax highlighting, code
-                completion, code generation, often with version control system
-                integration and more. An IDE also makes it easy to compile and run
-                your Java code, all from within the IDE.
-            </p>
-            <p>
-                Here are the three most popular Java IDEs:
-            </p>
+    <div class="wrapper">
+        <nav id="navbar">
+            <header id="logo">Java</header>
             <ul>
-                <li><a href="https://www.eclipse.org/" alt="Eclipse oficial webpage" target="_blank">Eclipse</a></li>
-                <li><a href="https://www.jetbrains.com/idea/" alt="IntelliJ oficial webpage" target="_blank">IntelliJ
-                        IDEA</a></li>
-                <li><a href="https://netbeans.org/" alt="NetBeans oficial webpage" target="_blank">NetBeans</a></li>
+                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#Installing_JDK_and_a_Java_IDE" class="nav-link">Installing JDK and a Java IDE</a></li>
+                <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+                <li><a href="#Comments" class="nav-link">Comments</a></li>
+                <li><a href="#Variables" class="nav-link">Variables</a></li>
+                <li><a href="#Operators" class="nav-link">Operators</a></li>
+                <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+                <li><a href="#Loops" class="nav-link">Loops</a></li>
+                <li><a href="#Methods" class="nav-link">Methods</a></li>
+                <li><a href="#Reference" class="nav-link">Reference</a></li>
             </ul>
-            <p></p>
-            <p></p>
-            <p></p>
-        </section>
-        <section id="Syntax" class="main-section">
-            <header>Syntax</header>
-            <p>
-                Every line of code that runs in Java must be inside a class. In our
-                example, we named the class MyClass. A class should always start
-                with an uppercase first letter.
-            </p>
-            <p>
-                Note: Java is case-sensitive: "MyClass" and "myclass" has different
-                meaning.
-            </p>
-            <p>
-                The name of the java file must match the class name. When saving the
-                file, save it using the class name and add ".java" to the end of
-                the filename.
-            </p>
-            <p>
-                MyClass.java
-            </p>
-            <code class="language-java">
+        </nav>
+        <main id="main-doc">
+            <section id="Introduction" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Introduction</h2>
+                </header>
+                <p class="paragraph">
+                    Java is an object-oriented programming language developed by James
+                    Gosling and colleagues at Sun Microsystems in the early 1990s.
+                    Unlike conventional languages which are generally designed either
+                    to be compiled to native (machine) code, or to be interpreted
+                    from source code at runtime, Java is intended to be compiled
+                    to a bytecode, which is then run (generally using JIT compilation)
+                    by a Java Virtual Machine.
+                </p>
+            </section>
+            <section id="Installing_JDK_and_a_Java_IDE" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Installing JDK and a Java IDE</h2>
+                </header>
+                <p class="paragraph">
+                    In order to develop Java applications or Java APIs you need the Java
+                    Software Developer Kit (Java SDK) installed. You can find the differents Java SDKs here:
+                </p>
+                <p class="paragraph">
+                    <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html" alt=""
+                        target="_blank">
+                        Java Software Developer Kit (Java SDK)
+                    </a>
+                </p>
+
+                <p class="paragraph">
+                    If you plan to be working more seriously with Java, I would recommend
+                    that you install a Java IDE (Integrated Development Environment). An
+                    IDE contains both a code editor with syntax highlighting, code
+                    completion, code generation, often with version control system
+                    integration and more. An IDE also makes it easy to compile and run
+                    your Java code, all from within the IDE.
+                </p>
+                <p class="paragraph">
+                    Here are the three most popular Java IDEs:
+                </p>
+                <ul class="ul-list">
+                    <li><a href="https://www.eclipse.org/" alt="Eclipse oficial webpage" target="_blank">Eclipse</a>
+                    </li>
+                    <li><a href="https://www.jetbrains.com/idea/" alt="IntelliJ oficial webpage"
+                            target="_blank">IntelliJ
+                            IDEA</a></li>
+                    <li><a href="https://netbeans.org/" alt="NetBeans oficial webpage" target="_blank">NetBeans</a></li>
+                </ul>
+                <p></p>
+            </section>
+            <section id="Syntax" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Syntax</h2>
+                </header>
+                <p class="paragraph">
+                    Every line of code that runs in Java must be inside a class. In our
+                    example, we named the class MyClass. A class should always start
+                    with an uppercase first letter.
+                </p>
+                <p class="paragraph">
+                    Note: Java is case-sensitive: "MyClass" and "myclass" has different
+                    meaning.
+                </p>
+                <p class="paragraph">
+                    The name of the java file must match the class name. When saving the
+                    file, save it using the class name and add ".java" to the end of
+                    the filename.
+                </p>
+                <p class="paragraph">
+                    MyClass.java
+                </p>
+                <pre>
+                <code class="language-java">
                 public class MyClass {<br>
                 &emsp;public static void main(String[] args) {<br>
                 &emsp;&emsp;System.out.println("Hello World");<br>
                 &emsp;}<br>
                 }
             </code>
-            <p>
-                The output should be:
-            </p>
-            <code>
+            </pre>
+                <p class="paragraph">
+                    The output should be:
+                </p>
+                <pre>
+                <code>
                 Hello World
             </code>
-            <p>
-                <b>The main Method</b>
-            </p>
-            <p>
-                The main() method is required and you will see it in every Java program:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    The main Method
+                </h3>
+                <p class="paragraph">
+                    The main() method is required and you will see it in every Java program:
+                </p>
+                <pre>
+                <code>
                 public static void main(String[] args)
             </code>
-            <p>
-                Any code inside the main() method will be executed, just remember that
-                every Java program has a class name which must match the filename,
-                and that every program must contain the main() method.
-            </p>
-            <p>
-                <b>System.out.println()</b>
-            </p>
-            <p>
-                Inside the main() method, we can use the println() method to print a line
-                of text to the screen:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Any code inside the main() method will be executed, just remember that
+                    every Java program has a class name which must match the filename,
+                    and that every program must contain the main() method.
+                </p>
+                <h3 class="small-heading">
+                    System.out.println()
+                </h3>
+                <p class="paragraph">
+                    Inside the main() method, we can use the println() method to print a line
+                    of text to the screen:
+                </p>
+                <pre>
+                <code>
                 public static void main(String[] args) {<br>
                 &emsp;System.out.println("Hello World");<br>
                 }
             </code>
-            <p>
-                Note: Remember the curly braces {} marks the beginning and the end of a block of code and
-                each code statement must end with a semicolon.
-            </p>
-        </section>
-        <section id="Comments" class="main-section">
-            <header>Comments</header>
-            <p>
-                Comments can be used to explain Java code, and to make it more 
-                readable. It can also be used to prevent execution when testing 
-                alternative code.  
-            </p>
-            <p>
-                Single-line comments start with two forward slashes (//). Any 
-                text between // and the end of the line is ignored by Java 
-                (will not be executed). This example uses a single-line 
-                comment before a line of code:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Note: Remember the curly braces {} marks the beginning and the end of a block of code and
+                    each code statement must end with a semicolon.
+                </p>
+            </section>
+            <section id="Comments" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Comments</h2>
+                </header>
+                <p class="paragraph">
+                    Comments can be used to explain Java code, and to make it more
+                    readable. It can also be used to prevent execution when testing
+                    alternative code.
+                </p>
+                <p class="paragraph">
+                    Single-line comments start with two forward slashes (//). Any
+                    text between // and the end of the line is ignored by Java
+                    (will not be executed). This example uses a single-line
+                    comment before a line of code:
+                </p>
+                <pre>
+                <code>
                 // This is a comment<br>
                 System.out.println("Hello World");
             </code>
-            <p>
-                This example uses a single-line comment at the end of a 
-                line of code:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    This example uses a single-line comment at the end of a
+                    line of code:
+                </p>
+                <pre>
+                <code>
                 System.out.println("Hello World"); // This is a comment
             </code>
-            <p>
-                <b>Multi-line Comments</b>
-            </p>
-            <p>
-                Multi-line comments start with /* and ends with */. 
-                Any text between /* and */ will be ignored by Java. 
-                This example uses a multi-line comment (a comment block) 
-                to explain the code:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    Multi-line Comments
+                </h3>
+                <p class="paragraph">
+                    Multi-line comments start with /* and ends with */.
+                    Any text between /* and */ will be ignored by Java.
+                    This example uses a multi-line comment (a comment block)
+                    to explain the code:
+                </p>
+                <pre>
+                <code>
                 /* The code below will print the words Hello World <br>
                 to the screen, and it is amazing */ <br>
                 System.out.println("Hello World");
             </code>
-            <p></p>
-        </section>
-        <section id="Variables" class="main-section">
-            <header>Variables</header>
-            <p>
-                A Java variable is a piece of memory that can contain a data value.
-                A variable thus has a data type.
-            </p>
-            <p>
-                Variables are typically used to store information which your Java
-                program needs to do its job. This can be any kind of information
-                ranging from texts, codes (e.g. country codes, currency codes etc.)
-                to numbers, temporary results of multi step calculations etc.
-            </p>
-            <p>
-                In the code example below, the main() method contains the declaration
-                of a single integer variable named number. The value of the integer
-                variable is first set to 10, and then 20 is added to the variable
-                afterwards.
-            </p>
-            <code>
+        </pre>
+            </section>
+            <section id="Variables" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Variables</h2>
+                </header>
+                <p class="paragraph">
+                    A Java variable is a piece of memory that can contain a data value.
+                    A variable thus has a data type.
+                </p>
+                <p class="paragraph">
+                    Variables are typically used to store information which your Java
+                    program needs to do its job. This can be any kind of information
+                    ranging from texts, codes (e.g. country codes, currency codes etc.)
+                    to numbers, temporary results of multi step calculations etc.
+                </p>
+                <p class="paragraph">
+                    In the code example below, the main() method contains the declaration
+                    of a single integer variable named number. The value of the integer
+                    variable is first set to 10, and then 20 is added to the variable
+                    afterwards.
+                </p>
+                <pre>
+                <code>
                 public class MyClass {<br>
                 &emsp;public static void main(String[] args) {   <br>             
                 &emsp;&emsp;int number = 10;<br>           
@@ -204,27 +226,31 @@
                 &emsp;}<br>                
                 }
             </code>
-            <p>
-                <b>Variable Declaration</b>
-            </p>
-            <p>
-                Exactly how a variable is declared depends on what type of variable
-                it is (non-static, static, local, parameter). In Java you declare
-                a variable like this:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    Variable Declaration
+                </h3>
+                <p class="paragraph">
+                    Exactly how a variable is declared depends on what type of variable
+                    it is (non-static, static, local, parameter). In Java you declare
+                    a variable like this:
+                </p>
+                <pre>
+                <code>
                 type name;
             </code>
-            <p>
-                Instead of the word type, you write the data type of the variable.
-                Similarly, instead of the word name you write the name you want
-                the variable to have.
-            </p>
-            <p>
-                Here are examples of how to declare variables of all the primitive
-                data types in Java:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Instead of the word type, you write the data type of the variable.
+                    Similarly, instead of the word name you write the name you want
+                    the variable to have.
+                </p>
+                <p class="paragraph">
+                    Here are examples of how to declare variables of all the primitive
+                    data types in Java:
+                </p>
+                <pre>
+                <code>
                 byte    myByte;<br>
                 short   myShort;<br>
                 char    myChar;<br>
@@ -233,10 +259,12 @@
                 float   myFloat;<br>
                 double  myDouble;
             </code>
-            <p>
-                Here are examples of how to declare variables of the object types in Java:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Here are examples of how to declare variables of the object types in Java:
+                </p>
+                <pre>
+                <code>
                 Byte       myByte;<br>
                 Short      myShort;<br>
                 Character  myChar;<br>
@@ -246,352 +274,399 @@
                 Double     myDouble;<br>
                 String     myString;
             </code>
-            <p>
-                The equal sign is used to assign values to the variable. To create a
-                variable that should store text, look at the following example:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    The equal sign is used to assign values to the variable. To create a
+                    variable that should store text, look at the following example:
+                </p>
+                <pre>
+                <code>
                 String myName = "Mario";<br>
                 System.out.println(myName);
             </code>
-            <p></p>
-        </section>
-        <section id="Operators" class="main-section">
-            <header>Operators</header>
-            <p>
-                Java contains a set of built-in math operators for performing simple
-                math operations on Java variables. The Java math operators are
-                reasonably simple. Therefore Java also contains the Java Math class
-                which contains methods for performing more advanced math calculations
-                in Java.
-            </p>
-            <p>
-                <b>Arithmetic Operators</b>
-            </p>
-            <p>
-                Arithmetic operators are used to perform common mathematical operations.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Operator</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Addition</td>
-                        <td>+</td>
-                        <td>Adds together two values</td>
-                        <td>x + y</td>
-                    </tr>
-                    <tr>
-                        <td>Subtraction</td>
-                        <td>-</td>
-                        <td>Subtracts one value from another</td>
-                        <td>x - y</td>
-                    </tr>
-                    <tr>
-                        <td>Multiplication</td>
-                        <td>*</td>
-                        <td>Multiplies two values</td>
-                        <td>x * y</td>
-                    </tr>
-                    <tr>
-                        <td>Division</td>
-                        <td>/</td>
-                        <td>Divides one value from another</td>
-                        <td>x / y</td>
-                    </tr>
-                    <tr>
-                        <td>Modulus</td>
-                        <td>%</td>
-                        <td>Returns the division remainder</td>
-                        <td>x % y</td>
-                    </tr>
-                    <tr>
-                        <td>Increment</td>
-                        <td>++</td>
-                        <td>Increases the value of a variable by 1</td>
-                        <td>++x</td>
-                    </tr>
-                    <tr>
-                        <td>Decrement</td>
-                        <td>--</td>
-                        <td>Decreases the value of a variable by 1</td>
-                        <td>--x</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>
-                <b>The Java Math Class</b>
-            </p>
-            <p>
-                The Java Math class provides more advanced mathematical calculations
-                than what the basic Java math operators provide. The Math class
-                contains methods for finding the maximum or minimum of two values,
-                rounding values, logarithmic functions, square root, and trigonometric
-                functions (sin, cos, tan etc.).
-            </p>
-            <p>
-                Math.abs()
-            </p>
-            <p>
-                The Math.abs() function returns the absolute value of the parameter
-                passed to it. The absolute value is the positive value of the parameter.
-                If the parameter value is negative, the negative sign is removed and
-                the positive value corresponding to the negative value without sign is
-                returned. Here are two Math.abs() method examples:
-            </p>
-            <code>
+        </pre>
+            </section>
+            <section id="Operators" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Operators</h2>
+                </header>
+                <p class="paragraph">
+                    Java contains a set of built-in math operators for performing simple
+                    math operations on Java variables. The Java math operators are
+                    reasonably simple. Therefore Java also contains the Java Math class
+                    which contains methods for performing more advanced math calculations
+                    in Java.
+                </p>
+                <h3 class="small-heading">
+                    Arithmetic Operators
+                </h3>
+                <p class="paragraph">
+                    Arithmetic operators are used to perform common mathematical operations.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Operator</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td>+</td>
+                            <td>Adds together two values</td>
+                            <td>x + y</td>
+                        </tr>
+                        <tr>
+                            <td>Subtraction</td>
+                            <td>-</td>
+                            <td>Subtracts one value from another</td>
+                            <td>x - y</td>
+                        </tr>
+                        <tr>
+                            <td>Multiplication</td>
+                            <td>*</td>
+                            <td>Multiplies two values</td>
+                            <td>x * y</td>
+                        </tr>
+                        <tr>
+                            <td>Division</td>
+                            <td>/</td>
+                            <td>Divides one value from another</td>
+                            <td>x / y</td>
+                        </tr>
+                        <tr>
+                            <td>Modulus</td>
+                            <td>%</td>
+                            <td>Returns the division remainder</td>
+                            <td>x % y</td>
+                        </tr>
+                        <tr>
+                            <td>Increment</td>
+                            <td>++</td>
+                            <td>Increases the value of a variable by 1</td>
+                            <td>++x</td>
+                        </tr>
+                        <tr>
+                            <td>Decrement</td>
+                            <td>--</td>
+                            <td>Decreases the value of a variable by 1</td>
+                            <td>--x</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="small-heading">
+                    The Java Math Class
+                </h3>
+                <p class="paragraph">
+                    The Java Math class provides more advanced mathematical calculations
+                    than what the basic Java math operators provide. The Math class
+                    contains methods for finding the maximum or minimum of two values,
+                    rounding values, logarithmic functions, square root, and trigonometric
+                    functions (sin, cos, tan etc.).
+                </p>
+                <h4 class="smaller-heading">
+                    Math.abs()
+                </h4>
+                <p class="paragraph">
+                    The Math.abs() function returns the absolute value of the parameter
+                    passed to it. The absolute value is the positive value of the parameter.
+                    If the parameter value is negative, the negative sign is removed and
+                    the positive value corresponding to the negative value without sign is
+                    returned. Here are two Math.abs() method examples:
+                </p>
+                <pre>
+                <code>
                 int abs1 = Math.abs(10);  // abs1 = 10 <br>
                 int abs2 = Math.abs(-20); // abs2 = 20 <br>
             </code>
-            <p>
-                Math.ceil()
-            </p>
-            <p>
-                The Math.floor() function rounds a floating point value down to the nearest
-                integer value. The rounded value is returned as a double. Here is a
-                Math.floor() Java example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.ceil()
+                </h4>
+                <p class="paragraph">
+                    The Math.floor() function rounds a floating point value down to the nearest
+                    integer value. The rounded value is returned as a double. Here is a
+                    Math.floor() Java example:
+                </p>
+                <pre>
+                <code>
                 double floor = Math.floor(7.343);  // floor = 7.0
             </code>
-            <p>
-                Math.min()
-            </p>
-            <p>
-                The Math.min() method returns the smallest of two values passed to it as
-                parameter. Here is a Math.min() Java example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.min()
+                </h4>
+                <p>
+                    The Math.min() method returns the smallest of two values passed to it as
+                    parameter. Here is a Math.min() Java example:
+                </p>
+                <pre>
+                <code>
                 int min = Math.min(10, 20); // min = 10
             </code>
-            <p>
-                Math.max()
-            </p>
-            <p>
-                The Math.max() method returns the largest of two values passed to it as
-                parameter. Here is a Math.max() Java example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.max()
+                </h4>
+                <p class="paragraph">
+                    The Math.max() method returns the largest of two values passed to it as
+                    parameter. Here is a Math.max() Java example:
+                </p>
+                <pre>
+                <code>
                 int max = Math.max(10, 20); //max = 20;
             </code>
-            <p>
-                Math.round()
-            </p>
-            <p>
-                The Math.round() method rounds a float or double to the nearest integer
-                using normal math round rules (either up or down). Here is a
-                Java Math.round() example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.round()
+                </h4>
+                <p class="paragraph">
+                    The Math.round() method rounds a float or double to the nearest integer
+                    using normal math round rules (either up or down). Here is a
+                    Java Math.round() example:
+                </p>
+                <pre>
+                <code>
                 double roundedDown = Math.round(23.445); // roundedDown = 23.0
                 double roundedUp   = Math.round(23.545); // roundedUp = 24.0
             </code>
-            <p>
-                Math.random()
-            </p>
-            <p>
-                The Math.random() method returns a random floating point number
-                between 0 and 1. Of course the number is not fully random, but
-                the result of some calculation which is supposed to make it as
-                unpredictable as possible.
-            </p>
-            <p>
-                To get a random value between 0 and e.g. 100, multiply the value
-                returned by Math.random() with the maximum number. If
-                you need an integer value, use the round(), floor() or ceil()
-                method.
-            </p>
-            <p>
-                Here is a Java Math.random() example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.random()
+                </h4>
+                <p class="paragraph">
+                    The Math.random() method returns a random floating point number
+                    between 0 and 1. Of course the number is not fully random, but
+                    the result of some calculation which is supposed to make it as
+                    unpredictable as possible.
+                </p>
+                <p class="paragraph">
+                    To get a random value between 0 and e.g. 100, multiply the value
+                    returned by Math.random() with the maximum number. If
+                    you need an integer value, use the round(), floor() or ceil()
+                    method.
+                </p>
+                <p class="paragraph">
+                    Here is a Java Math.random() example:
+                </p>
+                <pre>
+                <code>
                 double random = Math.random() * 100;
             </code>
-            <p>
-                Math.exp()
-            </p>
-            <p>
-                The Math.exp() function returns e (Euler's number) raised to
-                the power of the value provided as parameter. Here is a Java
-                Math.exp() example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.exp()
+                </h4>
+                <p class="paragraph">
+                    The Math.exp() function returns e (Euler's number) raised to
+                    the power of the value provided as parameter. Here is a Java
+                    Math.exp() example:
+                </p>
+                <pre>
+                <code>
                 double exp1 = Math.exp(1);<br>             
                 System.out.println("exp1 = " + exp1);  //  exp1 = 2.718281828459045<br>
                 double exp2 = Math.exp(2);<br>
                 System.out.println("exp2 = " + exp2); // exp2 = 7.38905609893065<br>
             </code>
-            <p>
-                Math.log()
-            </p>
-            <p>
-                The Math.log() method provides the logarithm of the given
-                parameter. The base for the logarithm is i (Euler's number).
-                Thus, Math.log() provides the reverse function of
-                Math.exp(). Here is a Java Math.log() example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.log()
+                </h4>
+                <p class="paragraph">
+                    The Math.log() method provides the logarithm of the given
+                    parameter. The base for the logarithm is i (Euler's number).
+                    Thus, Math.log() provides the reverse function of
+                    Math.exp(). Here is a Java Math.log() example:
+                </p>
+                <pre>
+                <code>
                 double log1  = Math.log(1);<br>
                 System.out.println("log1 = " + log1); // log1 = 0.0<br>
 
                 double log10 = Math.log(10);<br>
                 System.out.println("log10 = " + log10); // log10 = 2.302585092994046<br>
             </code>
-            <p>
-                Math.pow()
-            </p>
-            <p>
-                The Math.pow() function takes two parameters. The method returns
-                the value of the first parameter raised to the power of the
-                second parameter. Here is a Math.pow() Java example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.pow()
+                </h4>
+                <p class="paragraph">
+                    The Math.pow() function takes two parameters. The method returns
+                    the value of the first parameter raised to the power of the
+                    second parameter. Here is a Math.pow() Java example:
+                </p>
+                <pre>
+                <code>
                 double pow2 = Math.pow(2,2);<br>
                 System.out.println("pow2 = " + pow2); // pow2 = 4.0<br>
                 double pow8 = Math.pow(2,8);<br>
                 System.out.println("pow8 = " + pow8); // pow8 = 256.0<br>
             </code>
-            <p>
-                Math.sqrt()
-            </p>
-            <p>
-                The Math.sqrt() method calculates the square root of the
-                parameter given to it. Here are a few Java Math.sqrt()
-                example:
-            </p>
-            <code>
+        </pre>
+                <h4 class="smaller-heading">
+                    Math.sqrt()
+                </h4>
+                <p class="paragraph">
+                    The Math.sqrt() method calculates the square root of the
+                    parameter given to it. Here are a few Java Math.sqrt()
+                    example:
+                </p>
+                <pre>
+                <code>
                 double sqrt4 = Math.sqrt(4);<br>
                 System.out.println("sqrt4 = " + sqrt4); // sqrt4 = 2.0<br>
                 double sqrt9 = Math.sqrt(9);<br>
                 System.out.println("sqrt9 = " + sqrt9); // sqrt9 = 3.0<br>
             </code>
-        </section>
-        <section id="Arrays" class="main-section">
-            <header>Arrays</header>
-            <p>
-                Arrays in Java are also objects. They need to be declared and
-                then created. In order to declare a variable that will hold
-                an array of integers, we use the following syntax:
-            </p>
-            <code>
+        </pre>
+            </section>
+            <section id="Arrays" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Arrays</h2>
+                </header>
+                <p class="paragraph">
+                    Arrays in Java are also objects. They need to be declared and
+                    then created. In order to declare a variable that will hold
+                    an array of integers, we use the following syntax:
+                </p>
+                <pre>
+                <code>
                 int[] arr;
             </code>
-            <p>
-                Notice there is no size, since we didn't create the array yet.
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Notice there is no size, since we didn't create the array yet.
+                </p>
+                <pre>
+                <code>
                 arr = new int[10];
             </code>
-            <p>
-                This will create a new array with the size of 10. We can check
-                the size by printing the array's length:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    This will create a new array with the size of 10. We can check
+                    the size by printing the array's length:
+                </p>
+                <pre>
+                <code>
                 System.out.println(arr.length);
             </code>
-            <p>
-                We can access the array and set values:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    We can access the array and set values:
+                </p>
+                <pre>
+                <code>
                 arr[0] = 4;<br>
                 arr[1] = arr[0] + 5;
             </code>
-            <p>
-                Java arrays are 0 based, which means the first element in an 
-                array is accessed at index 0 (e.g: arr[0], which accesses the 
-                first element). Also, as an example, an array of size 5 will 
-                only go up to index 4 due to it being 0 based.
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Java arrays are 0 based, which means the first element in an
+                    array is accessed at index 0 (e.g: arr[0], which accesses the
+                    first element). Also, as an example, an array of size 5 will
+                    only go up to index 4 due to it being 0 based.
+                </p>
+                <pre>
+                <code>
                 int[] arr = new int[5];<br>
                 //accesses and sets the first element<br>
                 arr[0] = 4;
             </code>
-            <p>
-                We can also create an array with values in the same line:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    We can also create an array with values in the same line:
+                </p>
+                <pre>
+                <code>
                 int[] arr = {1, 2, 3, 4, 5};
             </code>
-            <p>
-                Don't try to print the array without a loop, it will 
-                print something nasty like [I@f7e6a96. To print out an 
-                array, use the following code:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    Don't try to print the array without a loop, it will
+                    print something nasty like [I@f7e6a96. To print out an
+                    array, use the following code:
+                </p>
+                <pre>
+                <code>
                 for (int i=0; i < arr.length; i++) {<br>
                     &emsp;System.out.println(arr[i]);<br>
                 }
             </code>
-            <p>
-                <b>Multidimensional Java Arrays</b>
-            </p>
-            <p>
-                The examples shown above all created arrays with a single 
-                dimension, meaning elements with indexes going from 0 and 
-                up. It is, however, possible to create arrays where each 
-                element has two or more indexes which identify (locate) 
-                it in the array.
-            </p>
-            <p>
-                You create a multidimensional array in Java by appending 
-                one set of square brackets ([]) per dimension you want to 
-                add. Here is an example that creates a two-dimensional 
-                array:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    Multidimensional Java Arrays
+                </h3>
+                <p class="paragraph">
+                    The examples shown above all created arrays with a single
+                    dimension, meaning elements with indexes going from 0 and
+                    up. It is, however, possible to create arrays where each
+                    element has two or more indexes which identify (locate)
+                    it in the array.
+                </p>
+                <p class="paragraph">
+                    You create a multidimensional array in Java by appending
+                    one set of square brackets ([]) per dimension you want to
+                    add. Here is an example that creates a two-dimensional
+                    array:
+                </p>
+                <pre>
+                <code>
                 int[][] intArray = new int[10][20];
             </code>
-            <p>
-                This example creates a two-dimensional array of int elements. 
-                The array contains 10 elements in the first dimension, and 
-                20 elements in the second dimension. In other words, this 
-                examples creates an array of arrays of int elements. The 
-                array of arrays has space for 10 int arrays, and each int 
-                array has space for 20 int elements.
-            </p>
-        </section>
-        <section id="Loops" class="main-section">
-            <header>Loops</header>
-            <p>
-                Loops can execute a block of code as long as a specified condition is 
-                reached. Loops are handy because they save time, reduce errors, and 
-                they make code more readable.
-            </p>
-            <p>
-                <b>While Loop</b>
-            </p>
-            <p>
-                The while loop loops through a block of code as long as a specified 
-                condition is true. In the example below, the code in the loop will 
-                run, over and over again, as long as a variable (i) is less than 5:
-            </p>
-            <code>
+        </pre>
+                <p class="paragraph">
+                    This example creates a two-dimensional array of int elements.
+                    The array contains 10 elements in the first dimension, and
+                    20 elements in the second dimension. In other words, this
+                    examples creates an array of arrays of int elements. The
+                    array of arrays has space for 10 int arrays, and each int
+                    array has space for 20 int elements.
+                </p>
+            </section>
+            <section id="Loops" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Loops</h2>
+                </header>
+                <p class="paragraph">
+                    Loops can execute a block of code as long as a specified condition is
+                    reached. Loops are handy because they save time, reduce errors, and
+                    they make code more readable.
+                </p>
+                <h3 class="small-heading">
+                    While Loo
+                </h3>
+                <p class="paragraph">
+                    The while loop loops through a block of code as long as a specified
+                    condition is true. In the example below, the code in the loop will
+                    run, over and over again, as long as a variable (i) is less than 5:
+                </p>
+                <pre>
+                <code>
                 int i = 0; <br>
                 while (i < 5) { <br>
                 &emsp;System.out.println(i);<br>
                 &emsp;i++;<br>
                 }
             </code>
-            <p>
-                <b>The Do/While Loop</b>
-            </p>
-            <p>
-                The do/while loop is a variant of the while loop. This loop will 
-                execute the code block once, before checking if the condition is 
-                true, then it will repeat the loop as long as the condition is 
-                true. The example below uses a do/while loop. The loop will 
-                always be executed at least once, even if the condition is 
-                false, because the code block is executed before the condition 
-                is tested:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    The Do/While Loop
+                </h3>
+                <p class="paragraph">
+                    The do/while loop is a variant of the while loop. This loop will
+                    execute the code block once, before checking if the condition is
+                    true, then it will repeat the loop as long as the condition is
+                    true. The example below uses a do/while loop. The loop will
+                    always be executed at least once, even if the condition is
+                    false, because the code block is executed before the condition
+                    is tested:
+                </p>
+                <pre>
+                <code>
                 int i = 0;<br>
                 do {<br>
                 &emsp;System.out.println(i);<br>
@@ -599,79 +674,82 @@
                 }<br>
                 while (i < 5);
             </code>
-            <p>
-                <b>For Loop</b>
-            </p>
-            <p>
-                When you know exactly how many times you want to loop through 
-                a block of code, use the for loop instead of a while loop. Is 
-                executed (one time) before the execution of the code block. 
-                Defines the condition for executing the code block. Is 
-                executed (every time) after the code block has been executed.
-                The example below will print the numbers 0 to 4:
-            </p>
-            <code>
+        </pre>
+                <h3 class="small-heading">
+                    For Loop
+                </h3>
+                <p class="paragraph">
+                    When you know exactly how many times you want to loop through
+                    a block of code, use the for loop instead of a while loop. Is
+                    executed (one time) before the execution of the code block.
+                    Defines the condition for executing the code block. Is
+                    executed (every time) after the code block has been executed.
+                    The example below will print the numbers 0 to 4:
+                </p>
+                <pre>
+                <code>
                 for (int i = 0; i < 5; i++) {<br>
                 &emsp;System.out.println(i);<br>
                 }
             </code>
-            <p></p>
-        </section>
-        <section id="Methods" class="main-section">
-            <header>Methods</header>
-            <p>
-                A method is a block of code which only runs when it is called. 
-                You can pass data, known as parameters, into a method. Methods 
-                are used to perform certain actions, and they are also known 
-                as functions. Why use methods? To reuse code: define the code 
-                once, and use it many times
-            </p>
-            <p>
-                <b>Create a Method</b>
-            </p>
-            <p>
-                A method must be declared within a class. It is defined with 
-                the name of the method, followed by parentheses (). Java 
-                provides some pre-defined methods, such as System.out.println(), 
-                but you can also create your own methods to perform certain 
-                actions:
-            </p>
-            <code>
+        </pre>
+            </section>
+            <section id="Methods" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Methods</h2>
+                </header>
+                <p class="paragraph">
+                    A method is a block of code which only runs when it is called.
+                    You can pass data, known as parameters, into a method. Methods
+                    are used to perform certain actions, and they are also known
+                    as functions. Why use methods? To reuse code: define the code
+                    once, and use it many times
+                </p>
+                <h3 class="small-heading">
+                    Create a Method
+                </h3>
+                <p class="paragraph">
+                    A method must be declared within a class. It is defined with
+                    the name of the method, followed by parentheses (). Java
+                    provides some pre-defined methods, such as System.out.println(),
+                    but you can also create your own methods to perform certain
+                    actions:
+                </p>
+                <pre>
+                <code>
                 public class MyClass {<br>
                 &emsp;static void myMethod() {<br>
                 &emsp;&emsp;// code to be executed<br>
                 &emsp;}<br>
                 }<br>
             </code>
-            <p>
-                Example Explained
-            </p>
-            <p>
-                <ul>
+        </pre>
+                <p class="paragraph">
+                    Example Explained
+                </p>
+                <ul class="ul-list">
                     <li>
                         myMethod() is the name of the method
                     </li>
                     <li>
-                        static means that the method belongs to the MyClass 
+                        static means that the method belongs to the MyClass
                         class and not an object of the MyClass class.
                     </li>
                     <li>
                         void means that this method does not have a return value.
                     </li>
                 </ul>
-            </p>
-            <p>
-                <b>
+                <h3 class="small-heading">
                     Call a Method
-                </b>
-            </p>
-            <p>
-                To call a method in Java, write the method's name followed by two 
-                parentheses () and a semicolon ";". A method can also be called 
-                multiple times. In the following example, myMethod() is used to 
-                print a text (the action), when it is called:
-            </p>
-            <code>
+                </h3>
+                <p class="paragraph">
+                    To call a method in Java, write the method's name followed by two
+                    parentheses () and a semicolon ";". A method can also be called
+                    multiple times. In the following example, myMethod() is used to
+                    print a text (the action), when it is called:
+                </p>
+                <pre>
+                <code>
                 public class MyClass {<br>
                     &emsp;static void myMethod() {<br>
                         &emsp;&emsp;System.out.println("I just got executed!");<br>
@@ -688,24 +766,24 @@
                   // I just got executed!<br>
                   // I just got executed!
             </code>
-            <p></p>
-        </section>
-        <section id="Reference" class="main-section">
-            <header>Reference</header>
-            <p>All the documentation in this page is taken from:</p>
-            <ul>
-                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-                <li><a href="https://www.oracle.com/">Oracle</a></li>
-                <li><a href="https://www.freejavaguide.com/">Free Java Guide</a></li>
-                <li><a href="https://www.learnjavaonline.org/">Learn Java Online</a></li>
-                <li><a href="http://tutorials.jenkov.com/">Tutorials Jenkov</a></li>
-            </ul>
+        </pre>
+            </section>
+            <section id="Reference" class="main-section">
+                <header class="secondary-heading">
+                    <h2>Reference</h2>
+                </header>
+                <p class="paragraph">All the documentation in this page is taken from:</p>
+                <ul class="ul-list">
+                    <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                    <li><a href="https://www.oracle.com/">Oracle</a></li>
+                    <li><a href="https://www.freejavaguide.com/">Free Java Guide</a></li>
+                    <li><a href="https://www.learnjavaonline.org/">Learn Java Online</a></li>
+                    <li><a href="http://tutorials.jenkov.com/">Tutorials Jenkov</a></li>
+                </ul>
 
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+            </section>
+        </main>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
