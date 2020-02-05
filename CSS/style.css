@@ -1,4 +1,20 @@
 body{
-    margin: 0;
-    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#navbar{
+    grid-column: 1/2;
+    border: 1px solid rgba(0, 22, 22, 0.4);
+}
+
+#main-doc{
+    grid-column: 2/3;
+}
+
+@media (max-width:600px){
+
 }
