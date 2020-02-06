@@ -12,18 +12,58 @@
 <body>
     <div class="wrapper">
         <nav id="navbar">
-            <header id="logo">Java</header>
+            <header id="logo"><a href="#Introduction"><i class="fab fa-java"></i>&nbsp;&nbsp;Java</a></header>
             <ul>
-                <li><a href="#Introduction" class="nav-link">Introduction</a></li>
-                <li><a href="#Installing_JDK_and_a_Java_IDE" class="nav-link">Installing JDK and a Java IDE</a></li>
-                <li><a href="#Syntax" class="nav-link">Syntax</a></li>
-                <li><a href="#Comments" class="nav-link">Comments</a></li>
-                <li><a href="#Variables" class="nav-link">Variables</a></li>
-                <li><a href="#Operators" class="nav-link">Operators</a></li>
-                <li><a href="#Arrays" class="nav-link">Arrays</a></li>
-                <li><a href="#Loops" class="nav-link">Loops</a></li>
-                <li><a href="#Methods" class="nav-link">Methods</a></li>
-                <li><a href="#Reference" class="nav-link">Reference</a></li>
+                <li>
+                    <a href="#Introduction" class="nav-link">
+                        <i class="fas fa-door-open"></i>&nbsp;&nbsp;Introduction
+                    </a>
+                </li>
+                <li>
+                    <a href="#Installing_JDK_and_a_Java_IDE" class="nav-link">
+                        <i class="fas fa-file-download"></i>&nbsp;&nbsp;Installing JDK and a Java IDE
+                    </a>
+                </li>
+                <li>
+                    <a href="#Syntax" class="nav-link">
+                        <i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Syntax
+                    </a>
+                </li>
+                <li>
+                    <a href="#Comments" class="nav-link">
+                        <i class="fas fa-comment-dots"></i>&nbsp;&nbsp;Comments
+                    </a>
+                </li>
+                <li>
+                    <a href="#Variables" class="nav-link">
+                        <i class="fab fa-yahoo"></i> &nbsp;&nbsp;Variables
+                    </a>
+                </li>
+                <li>
+                    <a href="#Operators" class="nav-link">
+                        <i class="fas fa-superscript"></i>&nbsp;&nbsp;Operators
+                    </a>
+                </li>
+                <li>
+                    <a href="#Arrays" class="nav-link">
+                        <i class="fas fa-grip-horizontal"></i>&nbsp;&nbsp;Arrays
+                    </a>
+                </li>
+                <li>
+                    <a href="#Loops" class="nav-link">
+                        <i class="fab fa-rev"></i>&nbsp;&nbsp;Loops
+                    </a>
+                </li>
+                <li>
+                    <a href="#Methods" class="nav-link">
+                        <i class="fas fa-cogs"></i>&nbsp;&nbsp;Methods
+                    </a>
+                </li>
+                <li>
+                    <a href="#Reference" class="nav-link">
+                        <i class="fas fa-link"></i>&nbsp;&nbsp;Reference
+                    </a>
+                </li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -98,34 +138,34 @@
                 <p class="paragraph">
                     MyClass.java
                 </p>
-                <pre>
-                <code class="language-java">
+                <div class="div-code">
+                    <code>
                 public class MyClass {<br>
                 &emsp;public static void main(String[] args) {<br>
-                &emsp;&emsp;System.out.println("Hello World");<br>
+                &emsp;&emsp;System.out.println("Hello&nbsp;World");<br>
                 &emsp;}<br>
                 }
             </code>
-            </pre>
+                </div>
                 <p class="paragraph">
                     The output should be:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 Hello World
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     The main Method
                 </h3>
                 <p class="paragraph">
                     The main() method is required and you will see it in every Java program:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 public static void main(String[] args)
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Any code inside the main() method will be executed, just remember that
                     every Java program has a class name which must match the filename,
@@ -138,13 +178,13 @@
                     Inside the main() method, we can use the println() method to print a line
                     of text to the screen:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 public static void main(String[] args) {<br>
                 &emsp;System.out.println("Hello World");<br>
                 }
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Note: Remember the curly braces {} marks the beginning and the end of a block of code and
                     each code statement must end with a semicolon.
@@ -165,21 +205,21 @@
                     (will not be executed). This example uses a single-line
                     comment before a line of code:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 // This is a comment<br>
                 System.out.println("Hello World");
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     This example uses a single-line comment at the end of a
                     line of code:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 System.out.println("Hello World"); // This is a comment
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     Multi-line Comments
                 </h3>
@@ -189,13 +229,13 @@
                     This example uses a multi-line comment (a comment block)
                     to explain the code:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 /* The code below will print the words Hello World <br>
                 to the screen, and it is amazing */ <br>
                 System.out.println("Hello World");
             </code>
-        </pre>
+                </div>
             </section>
             <section id="Variables" class="main-section">
                 <header class="secondary-heading">
@@ -217,8 +257,8 @@
                     variable is first set to 10, and then 20 is added to the variable
                     afterwards.
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 public class MyClass {<br>
                 &emsp;public static void main(String[] args) {   <br>             
                 &emsp;&emsp;int number = 10;<br>           
@@ -226,7 +266,7 @@
                 &emsp;}<br>                
                 }
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     Variable Declaration
                 </h3>
@@ -235,11 +275,11 @@
                     it is (non-static, static, local, parameter). In Java you declare
                     a variable like this:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 type name;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Instead of the word type, you write the data type of the variable.
                     Similarly, instead of the word name you write the name you want
@@ -249,8 +289,8 @@
                     Here are examples of how to declare variables of all the primitive
                     data types in Java:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 byte    myByte;<br>
                 short   myShort;<br>
                 char    myChar;<br>
@@ -259,12 +299,12 @@
                 float   myFloat;<br>
                 double  myDouble;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Here are examples of how to declare variables of the object types in Java:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 Byte       myByte;<br>
                 Short      myShort;<br>
                 Character  myChar;<br>
@@ -274,17 +314,17 @@
                 Double     myDouble;<br>
                 String     myString;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     The equal sign is used to assign values to the variable. To create a
                     variable that should store text, look at the following example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 String myName = "Mario";<br>
                 System.out.println(myName);
             </code>
-        </pre>
+                </div>
             </section>
             <section id="Operators" class="main-section">
                 <header class="secondary-heading">
@@ -303,60 +343,62 @@
                 <p class="paragraph">
                     Arithmetic operators are used to perform common mathematical operations.
                 </p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Operator</th>
-                            <th>Description</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Addition</td>
-                            <td>+</td>
-                            <td>Adds together two values</td>
-                            <td>x + y</td>
-                        </tr>
-                        <tr>
-                            <td>Subtraction</td>
-                            <td>-</td>
-                            <td>Subtracts one value from another</td>
-                            <td>x - y</td>
-                        </tr>
-                        <tr>
-                            <td>Multiplication</td>
-                            <td>*</td>
-                            <td>Multiplies two values</td>
-                            <td>x * y</td>
-                        </tr>
-                        <tr>
-                            <td>Division</td>
-                            <td>/</td>
-                            <td>Divides one value from another</td>
-                            <td>x / y</td>
-                        </tr>
-                        <tr>
-                            <td>Modulus</td>
-                            <td>%</td>
-                            <td>Returns the division remainder</td>
-                            <td>x % y</td>
-                        </tr>
-                        <tr>
-                            <td>Increment</td>
-                            <td>++</td>
-                            <td>Increases the value of a variable by 1</td>
-                            <td>++x</td>
-                        </tr>
-                        <tr>
-                            <td>Decrement</td>
-                            <td>--</td>
-                            <td>Decreases the value of a variable by 1</td>
-                            <td>--x</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="div-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Operator</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Addition</td>
+                                <td>+</td>
+                                <td>Adds together two values</td>
+                                <td>x + y</td>
+                            </tr>
+                            <tr>
+                                <td>Subtraction</td>
+                                <td>-</td>
+                                <td>Subtracts one value from another</td>
+                                <td>x - y</td>
+                            </tr>
+                            <tr>
+                                <td>Multiplication</td>
+                                <td>*</td>
+                                <td>Multiplies two values</td>
+                                <td>x * y</td>
+                            </tr>
+                            <tr>
+                                <td>Division</td>
+                                <td>/</td>
+                                <td>Divides one value from another</td>
+                                <td>x / y</td>
+                            </tr>
+                            <tr>
+                                <td>Modulus</td>
+                                <td>%</td>
+                                <td>Returns the division remainder</td>
+                                <td>x % y</td>
+                            </tr>
+                            <tr>
+                                <td>Increment</td>
+                                <td>++</td>
+                                <td>Increases the value of a variable by 1</td>
+                                <td>++x</td>
+                            </tr>
+                            <tr>
+                                <td>Decrement</td>
+                                <td>--</td>
+                                <td>Decreases the value of a variable by 1</td>
+                                <td>--x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <h3 class="small-heading">
                     The Java Math Class
                 </h3>
@@ -377,12 +419,12 @@
                     the positive value corresponding to the negative value without sign is
                     returned. Here are two Math.abs() method examples:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int abs1 = Math.abs(10);  // abs1 = 10 <br>
                 int abs2 = Math.abs(-20); // abs2 = 20 <br>
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.ceil()
                 </h4>
@@ -391,11 +433,11 @@
                     integer value. The rounded value is returned as a double. Here is a
                     Math.floor() Java example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double floor = Math.floor(7.343);  // floor = 7.0
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.min()
                 </h4>
@@ -403,11 +445,11 @@
                     The Math.min() method returns the smallest of two values passed to it as
                     parameter. Here is a Math.min() Java example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int min = Math.min(10, 20); // min = 10
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.max()
                 </h4>
@@ -415,11 +457,11 @@
                     The Math.max() method returns the largest of two values passed to it as
                     parameter. Here is a Math.max() Java example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int max = Math.max(10, 20); //max = 20;
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.round()
                 </h4>
@@ -428,12 +470,12 @@
                     using normal math round rules (either up or down). Here is a
                     Java Math.round() example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double roundedDown = Math.round(23.445); // roundedDown = 23.0
                 double roundedUp   = Math.round(23.545); // roundedUp = 24.0
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.random()
                 </h4>
@@ -452,11 +494,11 @@
                 <p class="paragraph">
                     Here is a Java Math.random() example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double random = Math.random() * 100;
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.exp()
                 </h4>
@@ -465,14 +507,14 @@
                     the power of the value provided as parameter. Here is a Java
                     Math.exp() example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double exp1 = Math.exp(1);<br>             
                 System.out.println("exp1 = " + exp1);  //  exp1 = 2.718281828459045<br>
                 double exp2 = Math.exp(2);<br>
                 System.out.println("exp2 = " + exp2); // exp2 = 7.38905609893065<br>
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.log()
                 </h4>
@@ -482,15 +524,15 @@
                     Thus, Math.log() provides the reverse function of
                     Math.exp(). Here is a Java Math.log() example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double log1  = Math.log(1);<br>
                 System.out.println("log1 = " + log1); // log1 = 0.0<br>
 
                 double log10 = Math.log(10);<br>
                 System.out.println("log10 = " + log10); // log10 = 2.302585092994046<br>
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.pow()
                 </h4>
@@ -499,14 +541,14 @@
                     the value of the first parameter raised to the power of the
                     second parameter. Here is a Math.pow() Java example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double pow2 = Math.pow(2,2);<br>
                 System.out.println("pow2 = " + pow2); // pow2 = 4.0<br>
                 double pow8 = Math.pow(2,8);<br>
                 System.out.println("pow8 = " + pow8); // pow8 = 256.0<br>
             </code>
-        </pre>
+                </div>
                 <h4 class="smaller-heading">
                     Math.sqrt()
                 </h4>
@@ -515,14 +557,14 @@
                     parameter given to it. Here are a few Java Math.sqrt()
                     example:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 double sqrt4 = Math.sqrt(4);<br>
                 System.out.println("sqrt4 = " + sqrt4); // sqrt4 = 2.0<br>
                 double sqrt9 = Math.sqrt(9);<br>
                 System.out.println("sqrt9 = " + sqrt9); // sqrt9 = 3.0<br>
             </code>
-        </pre>
+                </div>
             </section>
             <section id="Arrays" class="main-section">
                 <header class="secondary-heading">
@@ -533,70 +575,70 @@
                     then created. In order to declare a variable that will hold
                     an array of integers, we use the following syntax:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int[] arr;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Notice there is no size, since we didn't create the array yet.
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 arr = new int[10];
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     This will create a new array with the size of 10. We can check
                     the size by printing the array's length:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 System.out.println(arr.length);
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     We can access the array and set values:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 arr[0] = 4;<br>
                 arr[1] = arr[0] + 5;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Java arrays are 0 based, which means the first element in an
                     array is accessed at index 0 (e.g: arr[0], which accesses the
                     first element). Also, as an example, an array of size 5 will
                     only go up to index 4 due to it being 0 based.
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int[] arr = new int[5];<br>
                 //accesses and sets the first element<br>
                 arr[0] = 4;
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     We can also create an array with values in the same line:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int[] arr = {1, 2, 3, 4, 5};
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Don't try to print the array without a loop, it will
                     print something nasty like [I@f7e6a96. To print out an
                     array, use the following code:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 for (int i=0; i < arr.length; i++) {<br>
                     &emsp;System.out.println(arr[i]);<br>
                 }
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     Multidimensional Java Arrays
                 </h3>
@@ -613,11 +655,11 @@
                     add. Here is an example that creates a two-dimensional
                     array:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int[][] intArray = new int[10][20];
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     This example creates a two-dimensional array of int elements.
                     The array contains 10 elements in the first dimension, and
@@ -644,15 +686,15 @@
                     condition is true. In the example below, the code in the loop will
                     run, over and over again, as long as a variable (i) is less than 5:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int i = 0; <br>
                 while (i < 5) { <br>
                 &emsp;System.out.println(i);<br>
                 &emsp;i++;<br>
                 }
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     The Do/While Loop
                 </h3>
@@ -665,8 +707,8 @@
                     false, because the code block is executed before the condition
                     is tested:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 int i = 0;<br>
                 do {<br>
                 &emsp;System.out.println(i);<br>
@@ -674,7 +716,7 @@
                 }<br>
                 while (i < 5);
             </code>
-        </pre>
+                </div>
                 <h3 class="small-heading">
                     For Loop
                 </h3>
@@ -686,13 +728,13 @@
                     executed (every time) after the code block has been executed.
                     The example below will print the numbers 0 to 4:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 for (int i = 0; i < 5; i++) {<br>
                 &emsp;System.out.println(i);<br>
                 }
             </code>
-        </pre>
+                </div>
             </section>
             <section id="Methods" class="main-section">
                 <header class="secondary-heading">
@@ -715,15 +757,15 @@
                     but you can also create your own methods to perform certain
                     actions:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 public class MyClass {<br>
                 &emsp;static void myMethod() {<br>
                 &emsp;&emsp;// code to be executed<br>
                 &emsp;}<br>
                 }<br>
             </code>
-        </pre>
+                </div>
                 <p class="paragraph">
                     Example Explained
                 </p>
@@ -748,8 +790,8 @@
                     multiple times. In the following example, myMethod() is used to
                     print a text (the action), when it is called:
                 </p>
-                <pre>
-                <code>
+                <div class="div-code">
+                    <code>
                 public class MyClass {<br>
                     &emsp;static void myMethod() {<br>
                         &emsp;&emsp;System.out.println("I just got executed!");<br>
@@ -766,7 +808,7 @@
                   // I just got executed!<br>
                   // I just got executed!
             </code>
-        </pre>
+                </div>
             </section>
             <section id="Reference" class="main-section">
                 <header class="secondary-heading">
@@ -780,11 +822,21 @@
                     <li><a href="https://www.learnjavaonline.org/">Learn Java Online</a></li>
                     <li><a href="http://tutorials.jenkov.com/">Tutorials Jenkov</a></li>
                 </ul>
-
             </section>
+            <footer>
+                <p id="footer-text" class="footer-text">
+                    Webpage coded with &nbsp;
+                    <i class="fas fa-coffee"></i>
+                    &nbsp; and &nbsp;
+                    <i class="fas fa-cookie"></i>
+                    &nbsp; by
+                    <a href="https://bit.ly/2SkNZWW" target="_blank" class="footer-link">Ulzahk</a> 2020
+                </p>
+            </footer>
         </main>
+        
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
-
 </html>
