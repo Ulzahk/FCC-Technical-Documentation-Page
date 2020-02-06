@@ -12,7 +12,14 @@
 <body>
     <div class="wrapper">
         <nav id="navbar">
-            <header id="logo"><a href="#Introduction"><i class="fab fa-java"></i>&nbsp;&nbsp;Java</a></header>
+            <header id="logo">
+                <a href="#Introduction">
+                    <i class="fab fa-java"></i>&nbsp;&nbsp;Java
+                </a>
+            </header>
+            <div class="toggle">
+                <div class="menu"><i class="fas fa-bars" aria-hidden="true"></i></div>
+            </div>
             <ul>
                 <li>
                     <a href="#Introduction" class="nav-link">
@@ -107,7 +114,7 @@
                 <p class="paragraph">
                     Here are the three most popular Java IDEs:
                 </p>
-                <ul class="ul-list">
+                <ul id="IDEs-list" class="ul-list">
                     <li><a href="https://www.eclipse.org/" alt="Eclipse oficial webpage" target="_blank">Eclipse</a>
                     </li>
                     <li><a href="https://www.jetbrains.com/idea/" alt="IntelliJ oficial webpage"
@@ -769,7 +776,7 @@
                 <p class="paragraph">
                     Example Explained
                 </p>
-                <ul class="ul-list">
+                <ul id="Explain-list"class="ul-list">
                     <li>
                         myMethod() is the name of the method
                     </li>
@@ -815,7 +822,7 @@
                     <h2>Reference</h2>
                 </header>
                 <p class="paragraph">All the documentation in this page is taken from:</p>
-                <ul class="ul-list">
+                <ul id="Reference-list"class="ul-list">
                     <li><a href="https://www.w3schools.com/">W3Schools</a></li>
                     <li><a href="https://www.oracle.com/">Oracle</a></li>
                     <li><a href="https://www.freejavaguide.com/">Free Java Guide</a></li>
@@ -833,8 +840,17 @@
                     <a href="https://bit.ly/2SkNZWW" target="_blank" class="footer-link">Ulzahk</a> 2020
                 </p>
             </footer>
-        </main>     
+        </main>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toggle').click(function () {
+                $('ul').toggleClass('active')
+            })
+        })
+    </script>
 </body>
+
 </html>
