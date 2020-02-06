@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -21,16 +26,26 @@ body{
     position: fixed;
     width: 250px;
     height: 100%;
-    background: green;
+    background: #007396;
     padding: 30px 0;
 }
 
 #logo{
-    color: #fff;
-    font-size: 40px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Fjalla One', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     
+}
+
+#logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-java{
+    font-size: 45px;
 }
 
 .wrapper #navbar ul li{
@@ -40,7 +55,12 @@ body{
 }
 
 .wrapper #navbar ul li:hover{
-    background: black;
+    background: #0489b1ce;
+    border-left: 4px solid #963000;
+}
+
+#navbar{
+    border-right: 1px solid rgba(0,0,0,0.05);
 }
 
 #navbar ul{
@@ -49,31 +69,35 @@ body{
 
 .nav-link{
     text-decoration: none;
-    color: #fff;
+    color: white;
     display: block;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 #main-doc{
     width: 100%;
     margin-left: 300px;
+    border-left: 1px solid rgba(255,255,255,0.05);
 }
 
-pre {
+.div-code{
     background: #2c3e50;
-    border-radius: 5px;
-    margin: 20px 0 20px 20px;
-    width: 80%;
-    padding-right: 300px;
+    border-radius: 3px;
+    margin: 20px -20px 20px 20px;
+    width: 93%;
+    padding: 2% 20% 2% 5%;
 }
 
 code {
-    color: #feca57;
+    color: #ED8B00;
+
 }
 
 .secondary-heading{
     font-size: 35px;
     color: black;
     padding: 30px;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .paragraph{
@@ -86,6 +110,7 @@ code {
 .small-heading {
     font-size: 23px;
     font-weight: 500;
+    font-family: 'Fjalla One', sans-serif;
     padding: 30px;
     color: #1e2833;
 }
@@ -95,6 +120,7 @@ code {
     font-weight: 500;
     padding: 30px;
     color: #1e2833;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .ul-list{
@@ -107,6 +133,50 @@ code {
     padding: 10px 0px;
     line-height: 1.6;
 }
+
+.div-table{
+    overflow-x: auto;
+    margin-right: 30px;
+}
+
+table, th, td{
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 30px;
+}
+
+th {
+    background-color:#007396;
+    color: white;
+    font-weight: 100;
+}
+
+tr:nth-child(even) {
+    background-color: #FFF5EE;
+}
+
+th, td{
+    padding: 15px;
+}
+
+#Reference ul li a{
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-link{
+    color: black;
+}
+
 
 /*Media Queries*/
 @media only screen and (max-width:768px){
@@ -130,6 +200,7 @@ code {
         text-align: center;
     }
 
+
     .paragraph{
         padding: 30px 0px 30px 10px;
     }
@@ -138,13 +209,12 @@ code {
         text-align: center;
     }
 
-    pre{
-        padding-right: 90%;
+    .div-code{
+        width: 90%;
     }
 
     code {
         font-size:12px;
-        padding-right: 100%;
     }
 
 }
