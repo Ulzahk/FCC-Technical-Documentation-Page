@@ -94,6 +94,8 @@ body{
     border-left: 1px solid rgba(255,255,255,0.05);
 }
 
+
+
 .div-code{
     background: #2c3e50;
     border-radius: 3px;
@@ -247,6 +249,9 @@ footer {
         overflow: hidden;
     }
 
+    .main-section{
+        padding-top: 16%;
+    }
 
     .paragraph{
         padding: 30px 0px 30px 10px;
