@@ -1,4 +1,4 @@
-# FCC-Product-Landing-Page
+# FCC-Technical-Documentation-Page
 ## Objective
 Build a Technical Documentation Page about any subject following the user requirements.
 ### User Requirements
