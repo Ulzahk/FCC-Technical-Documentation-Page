@@ -1,7 +1,9 @@
 # FCC-Technical-Documentation-Page
-## Objective
+
+### Objective 🎯
 Build a Technical Documentation Page about any subject following the user requirements.
-### User Requirements
+
+### User Requirements 📜
 - Have a **main** element with an **id main-doc**.
 - Several sections inside the **main** element with a corresponding **class main-section**. There should be a minimum of 5.
 - The first element within each **.main-section** should be a **header** element which contains text that describes the topic of that section.
@@ -17,7 +19,8 @@ Build a Technical Documentation Page about any subject following the user requir
 - Clicking on a **navbar** element, the page should navigate to the corresponding section of the **main-doc** element .
 -  On regular sized devices (laptops, desktops), the element with **id navbar** should be shown on the left side of the screen and should always be visible to the user.
 - The Technical Documentation page should use at least one **media query**.
-### Tools That Can Be Used
+
+### Tools That Can Be Used 🛠
 - HTML
 - CSS
 - JavaScript
